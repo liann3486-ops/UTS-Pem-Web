@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "nama": "rizki eka prasodjo",
+    "deskripsi": "12.11.5866 merupakan master dari uts ini dengan tugas membuat front-end dan mengirimkannya ke grup",
+    "foto": "assets/img/rizki.jpg"
+  },
+  {
+    "id": 2,
+    "nama": "andi agus salim",
+    "deskripsi": "dengan NIM 12.11.6018 merupakan pegawai dan mempunyai tugas mengerjakan back-end pada UTS ini",
+    "foto": "assets/img/andi.jpg"
+  }
+]

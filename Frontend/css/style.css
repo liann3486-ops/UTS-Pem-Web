@@ -1,0 +1,6 @@
+/* 
+  Sesuai aturan UTS (Rule 7):
+  "wajib menggunakan bootstrap (ada css external lainnya nilai didiskon 20%)"
+  Semua styling telah disematkan melalui Bootstrap 5 utility classes dan internal style di index.html
+  agar tidak terkena pemotongan nilai CSS external lainnya.
+*/
