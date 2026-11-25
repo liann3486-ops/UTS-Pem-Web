@@ -6,7 +6,7 @@ const path = require('path');
 
 const PORT = process.env.PORT || 3000;
 const DATA_FILE = path.join(__dirname, 'data', 'biodata.json');
-const FRONTEND_DIR = path.join(__dirname, '..', 'Frontend');
+const FRONTEND_DIR = path.join(__dirname, '..', 'backend');
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
