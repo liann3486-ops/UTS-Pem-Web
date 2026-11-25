@@ -5,15 +5,15 @@ const API = '/api/biodata';
 const DEFAULT_DATA = [
   {
     id: 1,
-    nama: "rizki eka prasodjo",
-    deskripsi: "12.11.5866 merupakan master dari uts ini dengan tugas membuat front-end dan mengirimkannya ke grup",
-    foto: "assets/img/rizki.jpg"
+    nama: "Lian Miranty",
+    deskripsi: "24010110181 merupakan master dari uts ini dengan tugas membuat front-end dan mengirimkannya ke grup",
+    foto: "assets/img/lian.jpg"
   },
   {
     id: 2,
-    nama: "andi agus salim",
-    deskripsi: "dengan NIM 12.11.6018 merupakan pegawai dan mempunyai tugas mengerjakan back-end pada UTS ini",
-    foto: "assets/img/andi.jpg"
+    nama: "Zalwa Nadia",
+    deskripsi: "dengan NIM 24010110168 merupakan pegawai dan mempunyai tugas mengerjakan back-end pada UTS ini",
+    foto: "assets/img/backend.jpg"
   }
 ];
 
@@ -59,8 +59,9 @@ function render() {
       </div>
     </div>`;
 
-  data.forEach(p => {
-    const fotoSrc = p.foto || 'assets/img/rizki.jpg';
+  data.forEach((p, idx) => {
+    const fotoDefault = idx === 0 ? 'assets/img/lian.jpg' : 'assets/img/backend.jpg';
+    const fotoSrc = p.foto || fotoDefault;
     html += `
     <!-- KARTU BIODATA -->
     <div class="col-12 col-md-6 col-lg-4">
@@ -97,7 +98,6 @@ async function muatData() {
       throw new Error();
     }
   } catch (e) {
-    // Backend belum berjalan atau dibuka langsung via file / frontend
     const local = localStorage.getItem('uts_biodata');
     if (local) {
       try { data = JSON.parse(local); }
@@ -182,7 +182,7 @@ document.getElementById('biodataForm').addEventListener('submit', async e => {
   const id = document.getElementById('fId').value;
   const nama = document.getElementById('fNama').value.trim();
   const deskripsi = document.getElementById('fDeskripsi').value.trim();
-  const foto = fotoBaru || (id ? (data.find(x => x.id == id)?.foto || '') : 'assets/img/rizki.jpg');
+  const foto = fotoBaru || (id ? (data.find(x => x.id == id)?.foto || '') : 'assets/img/lian.jpg');
 
   const payload = { nama, deskripsi, foto };
 
