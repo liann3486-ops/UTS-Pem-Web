@@ -2,6 +2,10 @@
 
 Aplikasi biodata (CRUD) dengan **Frontend** (HTML, Bootstrap 5, JavaScript) dan **Backend** (Node.js, REST API, data disimpan di file JSON).
 
+## Tim Pengembang
+- **Master (Frontend)**: Lian Miranty (NIM: 24010110181)
+- **Pegawai (Backend)**: Zalwa Nadia (NIM: 24010110168)
+
 ## Struktur
 ```
 UTS-Pem-Web/
@@ -10,20 +14,23 @@ UTS-Pem-Web/
 │   ├── css/style.css
 │   ├── js/app.js
 │   └── assets/img/
+│       ├── lian.jpg
+│       ├── backend.jpg
+│       └── btn-plus.png
 ├── Backend/
 │   ├── server.js
 │   ├── package.json
 │   └── data/biodata.json
-└── README.md  
+└── README.md
 ```
 
-## Cara menjalankan
+## Cara Menjalankan
 Pastikan Node.js sudah terpasang, lalu:
-```
+```bash
 cd Backend
 node server.js
 ```
-Buka http://localhost:3000 di browser (perlu internet untuk Bootstrap CDN).
+Buka http://localhost:3000 di browser.
 
 ## Endpoint API
 | Method | URL | Fungsi |
